@@ -25,7 +25,6 @@ app.get('/api/hello', function (req, res) {
 });
 //Header Parser endpoint
 app.get("/api/whoami", function (req, res) {
-  // IP address
   const ipaddress = req.ip || req.connection.remoteAddress;
   const language = req.headers["accept-language"];
   const software = req.headers["user-agent"];
